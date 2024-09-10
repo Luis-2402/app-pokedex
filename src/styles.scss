@@ -10,7 +10,16 @@ html {
 }
 
 main {
-	width: rem-calc(600);
+	width: 100%;
+	max-width: rem-calc(600);
 	box-sizing: border-box;
 	margin: 0 auto;
+
+	@media (max-width: 768px) { // Para tablets y teléfonos grandes
+		width: rem-calc(500);
+	  }
+	
+	  @media (max-width: 576px) { // Para teléfonos móviles más pequeños
+		width: 90%; // O usa rem-calc para otro valor si prefieres
+	  }
 }

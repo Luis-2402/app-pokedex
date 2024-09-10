@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     padding: rem-calc(20) 0;
     border-radius: rem-calc(10);
@@ -19,5 +18,11 @@
     &_secondary {
         color: var(--blanco);
         background: var(--secondary-color);
+    }
+
+    // Responsividad para pantallas más pequeñas
+    @media (max-width: 576px) {
+        padding: rem-calc(10) 0; // Reducir padding en pantallas pequeñas
+        border-radius: rem-calc(5);
     }
 }
